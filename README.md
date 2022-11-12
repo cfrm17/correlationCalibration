@@ -26,7 +26,7 @@ The Kendall’s tau-b correlation matrix is calculated by looping through the pa
 
 The Kendall’s tau-b transform estimate global correlation matrix is calculated for the set of non-proxy risk factors.  Proxied risk factors are included as placeholders in the global correlation matrix only.  The time to calculate the global correlation matrix can be reduced by sub-dividing the correlation matrix (ie: by grouping) and computing in parallel.
 
-Depending on the quality of the dataseries, some Kendall’s tau-b transform estimate correlations between pairs of quantities are NaN. This is later replaced with 0.
+Depending on the quality of the dataseries, some Kendall’s tau-b transform estimate correlations between pairs of quantities are NaN. This is later replaced with 0 (see https://finpricing.com/lib/FiZeroBond.html ).
 
 Using the Kendall tau-b transform estimate of this section, the global correlation matrix is computed.  This is the correlation matrix of all risk factors.  The matrix is almost certainly not PSD at this point.  Rows and columns corresponding to proxy risk factors are filled with zeros (see figure below).
 
